@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>FLORES ESPECIALES PARA TI</title>
+</head>
+<body>
+    <div class="greetings">
+        <span>H</span>
+        <span>O</span>
+        <span>L</span>
+        <span>A</span>
+    </div>
+    <div class="greetings">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="description">
+        <span>Tengo un regalo especial para ti!!</span>
+    </div>
+    <div class="button">
+        <button onclick="fireworksAndRedirect()">Haga Clic</button>
+    </div>
+
+    <!-- Incluye la librería Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script>
+        function fireworksAndRedirect() {
+            // Activa los fuegos artificiales
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#FF69B4', '#FF1493', '#FFD700', '#FFFFFF'],
+            });
+
+            // Redirige a la página flower.html después de 1.5 segundos
+            setTimeout(() => {
+                window.location.href = 'flower.html';
+            }, 1500); // 1500 milisegundos = 1.5 segundos
+        }
+    </script>
+</body>
+</html>
