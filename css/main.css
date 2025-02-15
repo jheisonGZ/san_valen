@@ -1020,7 +1020,7 @@ body {
 .flower__g-fr {
   position: absolute;
   bottom: -4vmin;
-  left: vmin;
+  left: 10vmin; /* ¡Aquí falta un valor! */
   transform-origin: bottom left;
   z-index: 10;
   -webkit-animation: flower__g-fr-ans 2s linear infinite;
